@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FitPulse is a personalized fitness app with adaptive workouts, progress tracking, and daily coaching."
+    />
+    <title>FitPulse | Your Smarter Fitness App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header" id="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="FitPulse home">
+          <span class="brand-icon" aria-hidden="true">
+            <i></i><i></i><i></i>
+          </span>
+          <span>Fit<span>Pulse</span></span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Open navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#workouts">Workouts</a></li>
+          <li><a class="nav-link" href="#results">Results</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+
+        <a class="nav-button" href="#pricing">Start free</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home" aria-labelledby="hero-title">
+        <div class="hero-shape shape-one" aria-hidden="true"></div>
+        <div class="hero-shape shape-two" aria-hidden="true"></div>
+
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="eyebrow">
+              <span>New</span>
+              AI-powered training plans
+            </div>
+
+            <h1 id="hero-title">
+              Your strongest self,
+              <em>one smart workout</em>
+              at a time.
+            </h1>
+
+            <p class="hero-description">
+              FitPulse creates workouts that adapt to your goals, schedule, and
+              progress—so every session moves you forward.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-dark" href="#pricing">
+                Start 14-day free trial
+                <span aria-hidden="true">→</span>
+              </a>
+              <button class="button button-play" id="open-demo" type="button">
+                <span class="play-icon" aria-hidden="true">▶</span>
+                See how it works
+              </button>
+            </div>
+
+            <div class="hero-proof" aria-label="FitPulse member rating">
+              <div class="avatar-stack" aria-hidden="true">
+                <span>AM</span><span>JL</span><span>SK</span><span>+</span>
+              </div>
+              <div>
+                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p>Loved by 50,000+ active members</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="FitPulse application preview">
+            <div class="floating-badge badge-fire">
+              <span aria-hidden="true">↗</span>
+              <strong>12 day</strong>
+              <small>active streak</small>
+            </div>
+
+            <div class="phone">
+              <div class="phone-speaker" aria-hidden="true"></div>
+              <div class="phone-screen">
+                <div class="app-topbar">
+                  <div>
+                    <small>MONDAY, JUL 27</small>
+                    <strong>Good morning, Alex</strong>
+                  </div>
+                  <span class="profile-avatar">A</span>
+                </div>
+
+                <div class="activity-card">
+                  <div class="ring">
+                    <div class="ring-center">
+                      <strong>72%</strong>
+                      <small>daily goal</small>
+                    </div>
+                  </div>
+                  <div class="activity-copy">
+                    <span>TODAY’S ACTIVITY</span>
+                    <strong>640 <small>kcal</small></strong>
+                    <p>8,426 steps</p>
+                  </div>
+                </div>
+
+                <div class="app-stats">
+                  <article>
+                    <span aria-hidden="true">◷</span>
+                    <strong>46</strong>
+                    <small>minutes</small>
+                  </article>
+                  <article>
+                    <span aria-hidden="true">⌁</span>
+                    <strong>4.8</strong>
+                    <small>kilometres</small>
+                  </article>
+                  <article>
+                    <span aria-hidden="true">♡</span>
+                    <strong>128</strong>
+                    <small>avg. bpm</small>
+                  </article>
+                </div>
+
+                <div class="next-workout">
+                  <div class="workout-art" aria-hidden="true">
+                    <span></span>
+                  </div>
+                  <div>
+                    <small>NEXT WORKOUT</small>
+                    <strong>Full Body Power</strong>
+                    <p>32 min · Intermediate</p>
+                  </div>
+                  <button type="button" aria-label="Start Full Body Power workout">▶</button>
+                </div>
+
+                <div class="app-nav" aria-hidden="true">
+                  <span class="selected">⌂</span><span>▥</span><span>◉</span><span>♙</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-goal">
+              <span class="goal-check" aria-hidden="true">✓</span>
+              <div>
+                <strong>Goal completed!</strong>
+                <small>Weekly cardio target</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container hero-metrics" aria-label="FitPulse statistics">
+          <div><strong data-count="50">50K+</strong><span>active members</span></div>
+          <div><strong data-count="4.9">4.9</strong><span>average rating</span></div>
+          <div><strong data-count="1200">1,200+</strong><span>guided workouts</span></div>
+          <div><strong data-count="92">92%</strong><span>reach their goal</span></div>
+        </div>
+      </section>
+
+      <section class="section features" id="features" aria-labelledby="features-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-label">BUILT FOR REAL PROGRESS</p>
+              <h2 id="features-title">Everything your fitness journey needs.</h2>
+            </div>
+            <p>
+              One simple app replaces scattered plans, trackers, and guesswork
+              with a routine made specifically for you.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card feature-wide reveal">
+              <div class="feature-copy">
+                <span class="feature-number">01</span>
+                <div class="feature-icon lime" aria-hidden="true">✦</div>
+                <h3>Workouts that adapt with you</h3>
+                <p>
+                  Your plan automatically adjusts based on completed sessions,
+                  recovery, equipment, and weekly availability.
+                </p>
+                <a href="#workouts">Explore smart workouts →</a>
+              </div>
+              <div class="plan-preview" aria-hidden="true">
+                <div class="plan-header">
+                  <span>Your weekly plan</span>
+                  <small>WEEK 4</small>
+                </div>
+                <div class="week-row">
+                  <span><small>M</small><b>21</b></span>
+                  <span class="done"><small>T</small><b>22</b></span>
+                  <span class="today"><small>W</small><b>23</b></span>
+                  <span><small>T</small><b>24</b></span>
+                  <span><small>F</small><b>25</b></span>
+                </div>
+                <div class="mini-session">
+                  <i></i>
+                  <div><small>TODAY · 6:00 PM</small><strong>Upper Body Strength</strong></div>
+                  <span>38 min</span>
+                </div>
+                <div class="mini-session muted-session">
+                  <i></i>
+                  <div><small>FRIDAY</small><strong>Mobility & Recovery</strong></div>
+                  <span>20 min</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="feature-card reveal">
+              <span class="feature-number">02</span>
+              <div class="feature-icon coral" aria-hidden="true">⌁</div>
+              <h3>See progress clearly</h3>
+              <p>
+                Follow strength, endurance, consistency, and body measurements
+                with easy visual reports.
+              </p>
+              <div class="progress-mini" aria-hidden="true">
+                <span style="--height: 42%"></span>
+                <span style="--height: 58%"></span>
+                <span style="--height: 51%"></span>
+                <span style="--height: 72%"></span>
+                <span style="--height: 68%"></span>
+                <span style="--height: 91%"></span>
+              </div>
+            </article>
+
+            <article class="feature-card feature-dark reveal">
+              <span class="feature-number">03</span>
+              <div class="feature-icon purple" aria-hidden="true">♡</div>
+              <h3>Train. Recover. Repeat.</h3>
+              <p>
+                Daily readiness insights balance activity, sleep, and recovery
+                so you know when to push or rest.
+              </p>
+              <div class="recovery-score" aria-hidden="true">
+                <div><strong>86</strong><small>READY</small></div>
+                <span>Great recovery</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section workouts" id="workouts" aria-labelledby="workouts-title">
+        <div class="container">
+          <div class="workout-heading reveal">
+            <p class="section-label">WORKOUT LIBRARY</p>
+            <h2 id="workouts-title">Move your way.</h2>
+            <p>
+              Pick a focus and FitPulse will shape each session around your
+              current level and available time.
+            </p>
+          </div>
+
+          <div class="workout-tabs reveal" role="tablist" aria-label="Workout categories">
+            <button
+              class="workout-tab active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="workout-panel"
+              data-workout="strength"
+            >Strength</button>
+            <button
+              class="workout-tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="workout-panel"
+              data-workout="cardio"
+            >Cardio</button>
+            <button
+              class="workout-tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="workout-panel"
+              data-workout="mobility"
+            >Mobility</button>
+          </div>
+
+          <div class="workout-showcase reveal" id="workout-panel" role="tabpanel">
+            <div class="workout-poster">
+              <div class="poster-lines" aria-hidden="true"></div>
+              <div class="poster-person" aria-hidden="true">
+                <span class="person-head"></span>
+                <span class="person-body"></span>
+                <span class="person-arm arm-one"></span>
+                <span class="person-arm arm-two"></span>
+                <span class="person-leg leg-one"></span>
+                <span class="person-leg leg-two"></span>
+              </div>
+              <span class="poster-badge" id="poster-badge">POWER SERIES</span>
+              <strong class="poster-title" id="poster-title">BUILD<br />STRENGTH</strong>
+            </div>
+
+            <div class="workout-details">
+              <p class="workout-kicker" id="workout-kicker">STRENGTH TRAINING</p>
+              <h3 id="workout-name">Full Body Power</h3>
+              <p id="workout-description">
+                Build total-body strength through smart compound movements,
+                guided form cues, and progressive weekly targets.
+              </p>
+              <div class="workout-facts">
+                <div><small>DURATION</small><strong id="workout-duration">30–45 min</strong></div>
+                <div><small>LEVELS</small><strong id="workout-level">All levels</strong></div>
+                <div><small>EQUIPMENT</small><strong id="workout-equipment">Optional</strong></div>
+              </div>
+              <a class="button button-lime" href="#pricing">
+                Try this workout
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section results" id="results" aria-labelledby="results-title">
+        <div class="container">
+          <div class="results-grid">
+            <div class="results-copy reveal">
+              <p class="section-label">PROGRESS YOU CAN SEE</p>
+              <h2 id="results-title">Small actions. Powerful results.</h2>
+              <p>
+                FitPulse turns every workout into useful feedback, helping you
+                stay consistent and understand what is working.
+              </p>
+
+              <ul class="check-list">
+                <li><span>✓</span> Weekly progress and consistency reports</li>
+                <li><span>✓</span> Strength and endurance milestones</li>
+                <li><span>✓</span> Personal records worth celebrating</li>
+              </ul>
+            </div>
+
+            <div class="dashboard-card reveal">
+              <div class="dashboard-top">
+                <div><small>MONTHLY REPORT</small><strong>Your progress</strong></div>
+                <span>July 2026⌄</span>
+              </div>
+
+              <div class="dashboard-score">
+                <div>
+                  <small>WORKOUT CONSISTENCY</small>
+                  <strong>92%</strong>
+                  <p><span>↗ 12%</span> from last month</p>
+                </div>
+                <div class="score-ring"><span>24<small>sessions</small></span></div>
+              </div>
+
+              <div class="chart" aria-label="Weekly workout activity chart">
+                <div class="chart-column"><span style="--bar: 44%"></span><small>W1</small></div>
+                <div class="chart-column"><span style="--bar: 63%"></span><small>W2</small></div>
+                <div class="chart-column"><span style="--bar: 57%"></span><small>W3</small></div>
+                <div class="chart-column current"><span style="--bar: 88%"></span><small>W4</small></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-heading reveal">
+            <p class="section-label">MEMBER STORIES</p>
+            <h2>Real people. Real momentum.</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="testimonial-card reveal">
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <p>
+                The workouts fit around my shifts, and I finally stopped
+                restarting every Monday. I’m stronger and much more consistent.
+              </p>
+              <div class="member">
+                <span class="member-avatar avatar-one">MC</span>
+                <div><strong>Maya Chen</strong><small>Member for 8 months</small></div>
+                <b>★★★★★</b>
+              </div>
+            </article>
+
+            <article class="testimonial-card featured-quote reveal">
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <p>
+                I love that the plan changes when I miss a day. It feels
+                supportive instead of making me feel behind.
+              </p>
+              <div class="member">
+                <span class="member-avatar avatar-two">JR</span>
+                <div><strong>Jordan Reed</strong><small>Member for 1 year</small></div>
+                <b>★★★★★</b>
+              </div>
+            </article>
+
+            <article class="testimonial-card reveal">
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <p>
+                Seeing my strength improve each week keeps me motivated. The
+                app makes progress feel simple and measurable.
+              </p>
+              <div class="member">
+                <span class="member-avatar avatar-three">NS</span>
+                <div><strong>Noah Singh</strong><small>Member for 5 months</small></div>
+                <b>★★★★★</b>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pricing" id="pricing" aria-labelledby="pricing-title">
+        <div class="container">
+          <div class="pricing-heading reveal">
+            <p class="section-label">SIMPLE PRICING</p>
+            <h2 id="pricing-title">Invest in your strongest self.</h2>
+            <p>Start free for 14 days. Cancel anytime.</p>
+
+            <div class="billing-toggle" aria-label="Choose billing period">
+              <button class="active" type="button" data-billing="monthly">Monthly</button>
+              <button type="button" data-billing="yearly">
+                Yearly <span>Save 30%</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="price-grid">
+            <article class="price-card reveal">
+              <p class="plan-name">STARTER</p>
+              <h3>Build the habit.</h3>
+              <div class="price">
+                <span>$</span><strong data-monthly="0" data-yearly="0">0</strong><small>/ forever</small>
+              </div>
+              <p class="price-description">The essentials to begin moving consistently.</p>
+              <a class="button button-outline" href="#download">Get started free</a>
+              <ul>
+                <li><span>✓</span> 3 guided workouts each week</li>
+                <li><span>✓</span> Basic activity tracking</li>
+                <li><span>✓</span> Weekly progress summary</li>
+                <li class="muted"><span>—</span> Adaptive training plans</li>
+              </ul>
+            </article>
+
+            <article class="price-card popular reveal">
+              <div class="popular-label">MOST POPULAR</div>
+              <p class="plan-name">FITPULSE PRO</p>
+              <h3>Transform your routine.</h3>
+              <div class="price">
+                <span>$</span><strong data-monthly="14" data-yearly="10">14</strong><small class="price-period">/ month</small>
+              </div>
+              <p class="price-description">The complete personalized fitness experience.</p>
+              <a class="button button-lime" href="#download">Start 14-day free trial</a>
+              <ul>
+                <li><span>✓</span> Unlimited guided workouts</li>
+                <li><span>✓</span> Adaptive personal training plan</li>
+                <li><span>✓</span> Advanced progress analytics</li>
+                <li><span>✓</span> Recovery and readiness insights</li>
+                <li><span>✓</span> Offline workout access</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="faq reveal">
+            <div class="faq-heading">
+              <p class="section-label">QUESTIONS</p>
+              <h2>Good to know.</h2>
+            </div>
+
+            <div class="faq-list">
+              <article class="faq-item">
+                <button type="button" aria-expanded="false">
+                  Do I need gym equipment?
+                  <span>+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    No. Choose bodyweight-only workouts or tell FitPulse what
+                    equipment you have, and your plan will adjust automatically.
+                  </p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button type="button" aria-expanded="false">
+                  Is FitPulse suitable for beginners?
+                  <span>+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Yes. Every movement includes guidance and easier
+                    alternatives, while your starting plan matches your current
+                    fitness level.
+                  </p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button type="button" aria-expanded="false">
+                  Can I cancel during the trial?
+                  <span>+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Yes. You can cancel your trial at any time without a fee,
+                    directly from your account settings.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="download-section" id="download" aria-labelledby="download-title">
+        <div class="download-ring ring-a" aria-hidden="true"></div>
+        <div class="download-ring ring-b" aria-hidden="true"></div>
+        <div class="container download-content reveal">
+          <p class="section-label">YOUR NEXT MOVE STARTS HERE</p>
+          <h2 id="download-title">Ready to feel the difference?</h2>
+          <p>
+            Join thousands building stronger, healthier routines with a plan
+            that finally fits.
+          </p>
+          <div class="store-buttons">
+            <a href="#download" aria-label="Download FitPulse on the App Store">
+              <span aria-hidden="true">●</span>
+              <div><small>Download on the</small><strong>App Store</strong></div>
+            </a>
+            <a href="#download" aria-label="Get FitPulse on Google Play">
+              <span aria-hidden="true">▶</span>
+              <div><small>GET IT ON</small><strong>Google Play</strong></div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="#home">
+            <span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span>Fit<span>Pulse</span></span>
+          </a>
+          <p>Smarter training for real-life progress.</p>
+        </div>
+
+        <div class="footer-links">
+          <div><strong>Product</strong><a href="#features">Features</a><a href="#workouts">Workouts</a><a href="#pricing">Pricing</a></div>
+          <div><strong>Company</strong><a href="#results">Member stories</a><a href="#download">About us</a><a href="#download">Careers</a></div>
+          <div><strong>Support</strong><a href="#pricing">Help centre</a><a href="#pricing">Privacy</a><a href="#pricing">Terms</a></div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© <span id="current-year"></span> FitPulse. All rights reserved.</p>
+        <div><a href="#home">Instagram</a><a href="#home">TikTok</a><a href="#home">YouTube</a></div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+    <div class="modal" id="demo-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-card">
+        <button class="modal-close" type="button" aria-label="Close video" data-close-modal>×</button>
+        <div class="demo-animation" aria-hidden="true">
+          <div class="demo-pulse"></div>
+          <span>▶</span>
+        </div>
+        <p class="section-label">FITPULSE IN 45 SECONDS</p>
+        <h2 id="modal-title">A plan that moves with you.</h2>
+        <p>
+          Choose your goal, tell us your schedule and available equipment, and
+          FitPulse builds a weekly plan that adapts after every workout.
+        </p>
+        <a class="button button-dark" href="#pricing" data-close-modal>Start your free trial</a>
+      </div>
+    </div>
+  </body>
+</html>
