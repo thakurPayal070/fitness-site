@@ -1,4 +1,4 @@
-# FitPulse Fitness App Landing Page
+# FitPulse Fitness App  Page
 
 FitPulse is a responsive product landing page for a fictional fitness
 application. It was created with plain HTML, CSS, and JavaScript.
