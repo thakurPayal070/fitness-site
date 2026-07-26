@@ -3,6 +3,15 @@
 FitPulse is a responsive product landing page for a fictional fitness
 application. It was created with plain HTML, CSS, and JavaScript.
 
+##  Live Demo
+[Open Website](https://thakurpayal070.github.io/fitness-site/)
+
+##  GitHub Repository
+
+[github.com/thakurPayal070/fitness-site](https://github.com/thakurPayal070/fitness-site)
+
+---
+
 ## Assignment Requirements Included
 
 - Fixed navigation bar visible throughout the page
